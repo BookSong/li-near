@@ -64,7 +64,6 @@ var LinearAlgebra = {};
 
 // Link to Lapack
     try {
-      console.info(LIBRARY[process.platform][process.arch][0]);
         Lapack = new ffi.Library(LIBRARY[process.platform][process.arch][0], {
             // Singular Value Decomposition
             "sgesvd_": ["void", ["pointer", "pointer", "pointer", "pointer", "pointer", "pointer", "pointer", "pointer", "pointer", "pointer", "pointer", "pointer", "pointer", "pointer", ]],
