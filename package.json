@@ -1,0 +1,28 @@
+{
+  "name": "li-near",
+  "version": "1.0.0",
+  "description": "An easy-to-use nodejs linear algebra library using lapack for good performance.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BookSong/li-near.git"
+  },
+  "keywords": [
+    "linear",
+    "algebra",
+    "lapack"
+  ],
+  "author": "li.qi@outlook.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BookSong/li-near/issues"
+  },
+  "homepage": "https://github.com/BookSong/li-near#readme",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "ffi": "^2.1.0"
+  }
+}
