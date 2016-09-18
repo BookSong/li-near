@@ -34,9 +34,9 @@ Properties:
   
 ### Vector
 Properties:
-  *m: rows (Vectors are seen as vertical)
-  *elementSize: precision level, can be 4(FLOAT) or 8(DOUBLE)
-  *data: a buffer object containing the data
+  * m: rows (Vectors are seen as vertical)
+  * elementSize: precision level, can be 4(FLOAT) or 8(DOUBLE)
+  * data: a buffer object containing the data
 
 **NOTE: about precision**
 
@@ -65,10 +65,10 @@ Not recommanded to use, but if you want to include other things in a matrix/vect
 ```
 
 ### From given parameters: m,n,elementSize,fill
-  *m: row count
-  *n: column count
-  *elementSize: optional, choose from 2 levels of precision. Defaults to FLOAT (single precision), can be set to DOUBLE (double precision), see example below
-  *fill: optional, how to fill the matrix. Can be a buffer object; or 'identity': sets diagonal elements to 1.00 others to 0.00; or 'random': assign random number in the range of [0,1] to each element; or any number, which sets each elements to the same number; if not given, will fill the matrix with 0.00s.
+  * m: row count
+  * n: column count
+  * elementSize: optional, choose from 2 levels of precision. Defaults to FLOAT (single precision), can be set to DOUBLE (double precision), see example below
+  * fill: optional, how to fill the matrix. Can be a buffer object; or 'identity': sets diagonal elements to 1.00 others to 0.00; or 'random': assign random number in the range of [0,1] to each element; or any number, which sets each elements to the same number; if not given, will fill the matrix with 0.00s.
 
 ```javascript
   var matrix = new li.Matrix(3,4,li.DOUBLE,'identity');
@@ -92,9 +92,9 @@ direction: 'v'(default) normalize the vertical vectors; 'h' normalize the horizo
 
 ### dot(matrix,option): matrix multiplication
 option:
-  *option.alpha, scalar for matrix_A
-  *option.beta, scalar for matrix_B
-  *option.c, another matrix to be added after multiplication, call it matrix_C
+  * option.alpha, scalar for matrix_A
+  * option.beta, scalar for matrix_B
+  * option.c, another matrix to be added after multiplication, call it matrix_C
 
 The following code does this:
 
@@ -178,15 +178,15 @@ direction: 'v' (default value) get a column; or 'h' get a row
 ```
 
 ### setVector(index, vector, direction): set a Vector in a matrix
-*index: which row/column do you want to change. Starting from 0
-*vector: the vector you want to put into the matrix
-*direction: 'v' (default value) set a column; or 'h' set a row
+* index: which row/column do you want to change. Starting from 0
+* vector: the vector you want to put into the matrix
+* direction: 'v' (default value) set a column; or 'h' set a row
 
 ### subMatrix(offsetM, offsetN, m, n): get a subMatrix from a matrix
-*offsetM: which row to start. Starting from 0
-*offsetN: which column to start. Starting from 0
-*m: how many rows to extract
-*n: how many column to extract
+* offsetM: which row to start. Starting from 0
+* offsetN: which column to start. Starting from 0
+* m: how many rows to extract
+* n: how many column to extract
 
 ### join(matrix, direction): join 2 matrices
 
