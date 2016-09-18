@@ -1,5 +1,5 @@
 # li-near
-A easy-to-use linear algebra library with nodejs, using lapack for good performance. Inspired by https://github.com/NaturalNode/node-lapack
+An easy-to-use linear algebra library with nodejs, using lapack for good performance. Inspired by https://github.com/NaturalNode/node-lapack
 
 # How to use
 
