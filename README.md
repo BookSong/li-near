@@ -123,7 +123,8 @@ c:a_zero_matrix}
   some_matrix.inverse();
 ```
 
-### inverseDiagonal(): get the inverse matrix, it's faster, but only works on diagonal matrices, whose off-diagonal elements are all zero. It's faster because it only has to calculate the inverse of every diagonal element.
+### inverseDiagonal(): get the inverse matrix for diagonal matrix. 
+**NOTE** It's faster, but only works on diagonal matrices, whose off-diagonal elements are all zero. It's faster because it only has to calculate the inverse of every diagonal element.
 ```javascript
   some_matrix.inverseDiagonal();
 ```
